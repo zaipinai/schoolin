@@ -43,16 +43,12 @@
     <script>
         function alertInput()
         {
-            
-            document.getElementById("_NAME").innerHTML = name;
-            document.getElementById("_NUM").innerHTML = "学号："+num;
-            document.getElementById("_SCHOOL").innerHTML = school;
             startTime();
             btn();
         }
         function btn(){
             var img = document.getElementById("headpic");
-            var ran = Math.floor(Math.random()*20);//生成0和7之间的随机整数；由于会随机到0，所以建议图片命名从0开始
+            var ran = 1;
             img.src = "icon/headpic" + ran + ".jpg";
         }
         function startTime() {
